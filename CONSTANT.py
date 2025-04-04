@@ -9,7 +9,7 @@ IMPT_ELECTRODES = ['Fp1', 'O1', 'Fp2', 'O2']
 
 PATH_TO_FILES_TRAIN_EEG = '/Users/Patron/Documents/brain-waves-classification/hms_data/train_eegs'
 PATH_TO_TRAIN_CSV = '/Users/Patron/Documents/brain-waves-classification/hms_data/train.csv'
-
+PATH_TO_MERGE_PARQUET = '/Users/Patron/Documents/brain-waves-classification/hms_data/combined_parqs'
 
 SAMPLE_RATE = 44100  # Hertz
 DURATION = 5  # Seconds
