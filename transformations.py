@@ -23,6 +23,6 @@ def add_spectrogram_noise(input_data, amp, spread):
     data = data + amp*np.random.normal(mu, spread*np.std(data), data.shape)
     return data
     
-def scale_spectrogram(input_data)
+def scale_spectrogram(input_data):
     data = input_data/input_data.max()
     return data
