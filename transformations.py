@@ -16,3 +16,13 @@ def wavelet_transform(signal, numpy_multi):
     scales = np.arange(1, numpy_multi)
     coefficients, frequencies = pywt.cwt(signal, scales, 'cmor1.5-1.0')
     return coefficients, frequencies
+
+def add_spectrogram_noise(input_data, amp, spread):
+    data = input_data.iloc[:,1:]
+    mu = data.mean()
+    data = data + amp*np.random.normal(mu, spread*np.std(data), data.shape)
+    return data
+    
+def scale_spectrogram(input_data)
+    data = input_data/input_data.max()
+    return data
